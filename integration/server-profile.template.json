@@ -1,0 +1,45 @@
+{
+  "schema_version": "nfb.server-profile.v1.draft",
+  "status": "PREPARATION_ONLY_NOT_DEPLOYED",
+  "server_owner": "EXECUTOR_TEAM",
+  "server_created": false,
+  "base_url": null,
+  "proposed_paths": {
+    "ingest": "/v1/signal-batches",
+    "poll": "/v1/signal-batches",
+    "consumer_ack": "/v1/consumer-acks"
+  },
+  "auth": {
+    "mode": null,
+    "allowed_designs": [
+      "mTLS",
+      "HMAC_SHA256"
+    ],
+    "credential_delivery": "PRIVATE_SERVER_CONFIGURATION_NOT_CHAT_OR_GIT"
+  },
+  "delivery_semantics": "AT_LEAST_ONCE_WITH_DURABLE_IDEMPOTENCY",
+  "consumer_id": null,
+  "environment": "integration_test",
+  "production_submission_allowed": false,
+  "frozen_prediction": {
+    "model_version": "nfb.inventory-value.v3.20261109",
+    "feature_count": 125,
+    "probability_threshold": 0.5,
+    "daily_top_k": 10,
+    "same_coin_head_cooldown_hours": 72,
+    "grid": "daily00UTC",
+    "issue_deadline_minutes": 5,
+    "model_stale_at_utc": "2026-12-01T00:00:00+00:00"
+  },
+  "signal_snapshot_validity_hours": 24,
+  "strategy_max_input_age_ms": 10000,
+  "strategy_decision_ttl_ms": 60000,
+  "pending_agreement": [
+    "network boundary and test endpoint",
+    "auth and private key delivery",
+    "durable store, retention and recovery",
+    "cursor and consumer acknowledgement semantics",
+    "rate limit, timeout, heartbeat and logs",
+    "location of authorized RC2 compute and private account feedback"
+  ]
+}

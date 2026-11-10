@@ -1,0 +1,18 @@
+{
+  "transport_schema": "nfb.signal-transport.v1.draft",
+  "message_type": "SIGNAL_BATCH",
+  "message_id": "integration-test-empty-000001",
+  "stream_id": "integration-test-public-fixture",
+  "sequence": 1,
+  "environment": "integration_test",
+  "synthetic": true,
+  "issued_at_utc": "2026-11-10T00:01:00+00:00",
+  "asof_utc": "2026-11-10T00:00:00+00:00",
+  "recording_deadline_utc": "2026-11-10T00:05:00+00:00",
+  "valid_until_utc": "2026-11-11T00:00:00+00:00",
+  "model_version": "nfb.inventory-value.v3.20261109",
+  "strategy_id": "nfb.strategy.20261108.rc2",
+  "payload_encoding": "utf-8-json-string",
+  "payload_sha256": "08488d03eb1efbe96876ba69451dae1646e5c16f26d6d10b6d46086ea515a294",
+  "payload_utf8": "{\"batch_status\":\"TEST_FIXTURE\",\"synthetic\":true,\"research_only\":true,\"submission_allowed\":false,\"selection_contract\":{\"model_version\":\"nfb.inventory-value.v3.20261109\",\"feature_count\":125,\"probability_threshold\":0.5,\"daily_top_k\":10,\"same_coin_head_cooldown_hours\":72,\"grid\":\"daily00UTC\"},\"signals\":[],\"source_evidence\":[],\"reason_codes\":[\"SYNTHETIC_EMPTY_BATCH_NOT_A_LIVE_RESULT\"]}"
+}

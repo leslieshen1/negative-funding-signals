@@ -1,5 +1,5 @@
 {
-  "package_version": "public-review-2026.11.10",
+  "package_version": "public-review-2026.11.10-r1",
   "model_version": "nfb.inventory-value.v3.20261109",
   "status": "WATCH_ONLY",
   "submission_allowed": false,
@@ -20,5 +20,6 @@
     "src/common.py": "90da5a7655374211886eb4a5712434a5ed1f6430931a3c5b40b214796c3ed9c9"
   },
   "copied_at_utc": "2026-11-09T12:46:51.827441+00:00",
-  "mock_validation_report": "docs/MOCK_REVIEW_20261110.md"
+  "mock_validation_report": "docs/MOCK_REVIEW_20261110.md",
+  "server_integration_draft": "docs/SERVER_INTEGRATION_20261110.md"
 }
